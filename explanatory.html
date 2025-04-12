@@ -76,7 +76,7 @@
 			</p>
             <p>Без уважения, ваш бывший сотрудник.</p>
         </div>
-		<img src="https://i.ibb.co/FqL5Yb6g/d0b7260dcdb547655c451d7b825f8759-1.png" class="podp" onclick="location.reload()">
+		<img src="https://i.ibb.co/FqL5Yb6g/d0b7260dcdb547655c451d7b825f8759-1.png" class="podp" id="reloadButton">
     </div>
 
     <script>
@@ -106,33 +106,39 @@
 		const sranName = ["сраной", "дурацкой", "идиотской", "тупой", "мудацкой", "отвратительной", "грязной", "уродской", "тупейшей", "убогой", "мразотной", "глупой", "хамской", "жалкой", "чёртовой", "придурошной", "вонючей", "мерзкой", "шизофренической", "позорной", "токсичной", "смешной", "гнилушной", "отстойной", "ужасной", "психопатической", "болванской", "дауновской", "ничтожной", "уродской", "гадской", "дебильной", "отстойной", "паршивой", "больной", "мразотной", "недостойной", "мракобесной", "свинячьей", "ублюдочной", "негативной", "дуршлаговой", "дешёвой", "идиотской"];
 		const nakuyName = ["на хуй","в сраку","в жопу","к чёрту","на йух","на куй","туда, где солнце не светит","в задницу","в сраку зубастую"];
 		
-		
-		
-		document.getElementById('companyName').textContent = funnyCompanies[Math.floor(Math.random() * funnyCompanies.length)];
-		document.getElementById('bossName').textContent = bossName[Math.floor(Math.random() * bossName.length)];
-		document.getElementById('bossName2').textContent = bossName2[Math.floor(Math.random() * bossName2.length)];
-		document.getElementById('bossName3').textContent = bossName3[Math.floor(Math.random() * bossName3.length)];
-		document.getElementById('profName').textContent = profName[Math.floor(Math.random() * profName.length)];
-		document.getElementById('manName1').textContent = manName1[Math.floor(Math.random() * manName1.length)];
-		document.getElementById('manName2').textContent = manName2[Math.floor(Math.random() * manName2.length)];
-		document.getElementById('manName3').textContent = manName3[Math.floor(Math.random() * manName3.length)];
-		document.getElementById('utroName').textContent = utroName[Math.floor(Math.random() * utroName.length)];
-		document.getElementById('utroName2').textContent = utroName2[Math.floor(Math.random() * utroName2.length)];
-		document.getElementById('utroName3').textContent = utroName3[Math.floor(Math.random() * utroName3.length)];
-		document.getElementById('chuvName').textContent = chuvName[Math.floor(Math.random() * chuvName.length)];
-		document.getElementById('edaName').textContent = edaName[Math.floor(Math.random() * edaName.length)];
-		document.getElementById('mislName').textContent = mislName[Math.floor(Math.random() * mislName.length)];
-		document.getElementById('misl2Name').textContent = misl2Name[Math.floor(Math.random() * misl2Name.length)];
-		document.getElementById('acsessName').textContent = acsessName[Math.floor(Math.random() * acsessName.length)];
-		document.getElementById('bistName').textContent = bistName[Math.floor(Math.random() * bistName.length)];
-		document.getElementById('pogodaName').textContent = pogodaName[Math.floor(Math.random() * pogodaName.length)];
-		document.getElementById('nadelName').textContent = nadelName[Math.floor(Math.random() * nadelName.length)];
-		document.getElementById('hatName').textContent = hatName[Math.floor(Math.random() * hatName.length)];
-		document.getElementById('goName').textContent = goName[Math.floor(Math.random() * goName.length)];
-		document.getElementById('treinName').textContent = treinName[Math.floor(Math.random() * treinName.length)];
-		document.getElementById('plohoName').textContent = plohoName[Math.floor(Math.random() * plohoName.length)];
-		document.getElementById('sranName').textContent = sranName[Math.floor(Math.random() * sranName.length)];
-		document.getElementById('nakuyName').textContent = nakuyName[Math.floor(Math.random() * nakuyName.length)];
+		function updateValues() {
+            document.getElementById('companyName').textContent = funnyCompanies[Math.floor(Math.random() * funnyCompanies.length)];
+            document.getElementById('bossName').textContent = bossName[Math.floor(Math.random() * bossName.length)];
+            document.getElementById('bossName2').textContent = bossName2[Math.floor(Math.random() * bossName2.length)];
+            document.getElementById('bossName3').textContent = bossName3[Math.floor(Math.random() * bossName3.length)];
+            document.getElementById('profName').textContent = profName[Math.floor(Math.random() * profName.length)];
+            document.getElementById('manName1').textContent = manName1[Math.floor(Math.random() * manName1.length)];
+            document.getElementById('manName2').textContent = manName2[Math.floor(Math.random() * manName2.length)];
+            document.getElementById('manName3').textContent = manName3[Math.floor(Math.random() * manName3.length)];
+            document.getElementById('utroName').textContent = utroName[Math.floor(Math.random() * utroName.length)];
+            document.getElementById('utroName2').textContent = utroName2[Math.floor(Math.random() * utroName2.length)];
+            document.getElementById('utroName3').textContent = utroName3[Math.floor(Math.random() * utroName3.length)];
+            document.getElementById('chuvName').textContent = chuvName[Math.floor(Math.random() * chuvName.length)];
+            document.getElementById('edaName').textContent = edaName[Math.floor(Math.random() * edaName.length)];
+            document.getElementById('mislName').textContent = mislName[Math.floor(Math.random() * mislName.length)];
+            document.getElementById('misl2Name').textContent = misl2Name[Math.floor(Math.random() * misl2Name.length)];
+            document.getElementById('acsessName').textContent = acsessName[Math.floor(Math.random() * acsessName.length)];
+            document.getElementById('bistName').textContent = bistName[Math.floor(Math.random() * bistName.length)];
+            document.getElementById('pogodaName').textContent = pogodaName[Math.floor(Math.random() * pogodaName.length)];
+            document.getElementById('nadelName').textContent = nadelName[Math.floor(Math.random() * nadelName.length)];
+            document.getElementById('hatName').textContent = hatName[Math.floor(Math.random() * hatName.length)];
+            document.getElementById('goName').textContent = goName[Math.floor(Math.random() * goName.length)];
+            document.getElementById('treinName').textContent = treinName[Math.floor(Math.random() * treinName.length)];
+            document.getElementById('plohoName').textContent = plohoName[Math.floor(Math.random() * plohoName.length)];
+            document.getElementById('sranName').textContent = sranName[Math.floor(Math.random() * sranName.length)];
+            document.getElementById('nakuyName').textContent = nakuyName[Math.floor(Math.random() * nakuyName.length)];
+        }
+				// Добавляем обработчик клика на картинку
+		document.getElementById('reloadButton').addEventListener('click', function() {
+			updateValues(); // Обновляем значения при клике
+		});
+		// Инициализация начальных значений
+		updateValues();
     </script>
 </body>
 </html>

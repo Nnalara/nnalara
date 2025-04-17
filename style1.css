@@ -1,0 +1,502 @@
+* {
+	margin:0;
+	padding:0;
+}
+html {
+	background:rgba(26, 26, 26, 1);
+}
+body {
+	background:#212121;
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	font-style: normal;
+	min-width:360px;
+	background: linear-gradient(to bottom, rgba(33, 33, 33, 1), rgba(26, 26, 26, 1))
+}
+	header {
+		display: block;
+		width:100%;
+		max-width:960px;
+		background:#F3EFE8;
+		margin:0 auto;
+		height:124px;
+		min-width:360px;
+	}
+		.logo {
+			padding:40px 40px 40px 58px;
+			font-family: "Bungee Spice", sans-serif;
+			font-size:64px;
+			line-height:44px;
+			font-weight: 400;
+			font-style: normal;
+			width:190px;
+			float:left;
+		}
+		.menu {
+			float:right;
+			display:flex;
+			flex-direction:row;
+			margin-right:20px;
+		}
+			.menu a {
+				display:block;
+				text-decoration:none;
+				background:#212121;
+				padding:22px;
+				width:100px;
+				margin:30px 20px 0 0;
+				text-align:center;
+				color:#F3EFE8;
+				transition: all 1s ease-out;
+			}
+			.menu a:hover {
+				background:#D84400;
+				transition: all 1s ease-out;
+			}
+	main {
+		display: block;
+		width:100%;
+		max-width:960px;
+		background:#F3EFE8;
+		margin:0 auto;
+		height:auto;
+		min-height:780px;
+		min-width:360px;
+	}
+		main::before {
+			content:'';
+			display:block;
+			width:100%;
+			max-width:960px;
+			margin:0 auto;
+			height:5px;
+			background: linear-gradient(to right, rgba(33, 33, 33, 1), rgba(228, 111, 0, 1))
+		}
+		main::after {
+			content:'';
+			display:block;
+			width:100%;
+			max-width:960px;
+			margin:0 auto;
+			height:5px;
+			background: linear-gradient(to right, rgba(33, 33, 33, 1), rgba(228, 111, 0, 1))
+		}
+		main h1 {
+			display:block;
+			font-size:28px;
+			line-height:1;
+			text-align:center;
+			margin:40px;
+		}
+		main a.button {
+			display:block;
+			text-align:center;
+			text-decoration:none;
+			line-height:40px;
+			background:#212121;
+			width:50%;
+			height:40px;
+			color:#F3EFE8;
+			border-width:0px;
+			outline:0;
+			display:block;
+			margin: 0 auto 40px;
+			font-family: "Playfair Display", serif;
+			font-weight: 400;
+			font-style: normal;
+			font-size:13px;
+			text-transform:uppercase;
+			transition: all 1s ease-out;
+		}
+		main a.button:hover {
+				width:60%;
+				background:#D84400;
+				transition: all 1s ease-out;
+			}
+		main .greedblock {
+			display: grid;
+			width:90%;
+			margin:0 auto;
+			grid-template-columns:repeat(3, auto);
+		}
+			main .greedblock div {
+				width:260px;
+				background:#212121;
+				margin:0 auto;
+			}
+				main .greedblock div h3 {
+					padding:30px 30px 0px;
+					color:#F3EFE8;
+					text-transform:uppercase;
+				}
+				main .greedblock div p {
+					padding:15px 30px 30px;
+					color:#F3EFE8;
+					font-size:16px;
+					line-height:135%;
+				}
+				main .greedblock div a.button {
+					margin:0px auto 30px;
+					width:80%;
+					font-size:14px;
+					transition: all 1s ease-out;
+					background: linear-gradient(to right, rgba(33, 33, 33, 1), rgba(228, 111, 0, 1));
+					
+				}
+				main .greedblock div a.button:hover {
+					transition: all 1s ease-out;
+					width:100%;
+					font-size:15px;
+					
+				}
+		main .line {
+			width:100%;
+			border-top:2px solid #000000;
+			position:relative;
+		}
+		main .top1 {
+			top:97px;
+		}
+		main .top2 {
+			top:165px;
+		}
+		main .top3 {
+			top:234px;
+		}
+		main .ul {
+			margin:62px;
+		}
+			main .ul div {
+				font-family: "Playfair Display", serif;
+				background:#D84400;
+				width:10px;
+				left:25px;
+				height:60px;
+				text-align:left;
+				font-size:14px;
+				line-height:14px;
+				color:#F3EFE8;
+				border-radius:0 50% 50% 0;
+				margin:0 0 10px;
+				position:relative;
+				z-index:1;
+				transition: all 1s ease-out;
+			}
+				main .ul div:first-child::before {
+					content: "HTML";
+					background:#212121;
+					width:60px;
+					height:60px;
+					text-align:center;
+					line-height:60px;
+					color:#F3EFE8;
+					border-radius:50%;
+					display:block;
+					position:relative;
+					left:-25px;
+				}
+				main .ul div:nth-child(2)::before {
+					content: "CSS";
+					background:#212121;
+					width:60px;
+					height:60px;
+					text-align:center;
+					line-height:60px;
+					color:#F3EFE8;
+					border-radius:50%;
+					display:block;
+					position:relative;
+					left:-25px;				
+				}
+				main .ul div:nth-child(3)::before {
+					content: "JS";
+					background:#212121;
+					width:60px;
+					height:60px;
+					text-align:center;
+					line-height:60px;
+					color:#F3EFE8;
+					border-radius:50%;
+					display:block;
+					position:relative;
+					left:-25px;
+				}
+			main .ul div:hover:nth-child(1) {
+				border-radius:0 30px 30px 0;
+				width:780px;
+				transition: all 1s ease-out;
+			}
+			main .ul div:hover:nth-child(2) {
+				width:640px;
+				border-radius:0 30px 30px 0;
+				transition: all 1s ease-out;
+			}
+			main .ul div:hover:nth-child(3) {
+				width:460px;
+				border-radius:0 30px 30px 0;
+				transition: all 1s ease-out;
+			}
+				main .ul div p {
+					overflow:hidden;
+					height:50px;
+					width:100%;
+					position:relative;
+					top:-55px;
+					left:0px;
+					z-index:-100000;
+				}
+					main .ul div p span {
+						display:block;
+						margin:16px 0 15px 50px;
+						white-space: nowrap;
+						font-size:16px;
+						line-height:16px;
+						color:#F3EFE8;
+					}
+	footer {
+		display: block;
+		width:100%;
+		max-width:960px;
+		background: linear-gradient(to bottom, rgba(33, 33, 33, 1), rgba(26, 26, 26, 1));
+		margin:0 auto;
+		height:auto;
+		min-width:360px;
+	}
+		footer .greedblock {
+			display: grid;
+			width:90%;
+			margin:0 auto;
+			grid-template-columns:repeat(3, auto);
+		}
+			footer .greedblock div {
+				width:260px;
+				margin:70px auto 90px;
+				text-align:center;
+			}
+				footer .greedblock div a {
+					color:#E46F00;
+					font-size:16px;
+					text-decoration:none;
+					transition: all 1s ease-out;
+				}
+				footer .greedblock div a:hover {
+					color:#F3EFE8;
+					font-size:17px;
+					transition: all 1s ease-out;
+				}
+
+@media (max-width: 880px) {
+	.logo {
+		padding:40px 0px 40px 58px;
+		font-family: "Bungee Spice", sans-serif;
+		font-size:50px;
+		line-height:40px;
+		font-weight: 400;
+		font-style: normal;
+		width:160px;
+		float:left;
+	}
+	.menu {
+		float:right;
+		display:flex;
+		flex-direction:row;
+		margin-right:20px;
+	}
+		.menu a {
+			display:block;
+			text-decoration:none;
+			background:#212121;
+			padding:12px;
+			width:80px;
+			margin:35px 20px 0 0;
+			text-align:center;
+			color:#F3EFE8;
+			transition: all 1s ease-out;
+		}
+		.menu a:hover {
+			background:#D84400;
+			transition: all 1s ease-out;
+		}
+		
+		main .greedblock {
+			display: grid;
+			width:90%;
+			margin:0 auto;
+			grid-template-columns:repeat(3, auto);
+		}
+			main .greedblock div {
+				width:200px;
+				background:#212121;
+				margin:0 auto;
+				transition: all 1s ease-out;
+			}
+
+		footer .greedblock {
+			display: grid;
+			width:90%;
+			margin:0px auto;
+			padding:40px 0 60px;
+			grid-template-rows:repeat(3, auto);
+			grid-template-columns:none!important;
+		}
+			footer .greedblock div {
+				width:260px;
+				margin:10px auto!important;
+				text-align:center;
+			}
+
+			main .ul div:hover:nth-child(1) {
+				border-radius:0 30px 30px 0;
+				width:90%;
+				transition: all 1s ease-out;
+			}
+			main .ul div:hover:nth-child(2) {
+				width:90%;
+				border-radius:0 30px 30px 0;
+				transition: all 1s ease-out;
+			}
+			main .ul div:hover:nth-child(3) {
+				width:90%;
+				border-radius:0 30px 30px 0;
+				transition: all 1s ease-out;
+			}
+				main .ul div p {
+					overflow:hidden;
+					height:50px;
+					width:100%;
+					position:relative;
+					top:-55px;
+					left:0px;
+					z-index:-100000;
+				}
+					main .ul div p span {
+						display:block;
+						margin:6px 0 15px 50px;
+						white-space: wrap!important;
+						font-size:16px;
+						line-height:16px;
+						color:#F3EFE8;
+					}
+}
+@media (max-width: 685px) {
+	header {
+		display: block;
+		width:100%;
+		max-width:960px;
+		background:#F3EFE8;
+		margin:0 auto;
+		height:150px!important;
+	}
+	.logo {
+		padding:20px 0px!important;
+		font-family: "Bungee Spice", sans-serif;
+		font-size:50px;
+		line-height:40px;
+		font-weight: 400;
+		font-style: normal;
+		margin:0 auto;
+		width:160px;
+		float:none!important;
+	}
+	.menu {
+		float:none!important;
+		display:block!important;
+		width:90%;
+		margin:0px auto;
+		text-align:center!important;
+	}
+		.menu a {
+			display:inline-block!important;
+			text-decoration:none;
+			background:#212121;
+			padding:12px;
+			width:80px;
+			margin:5px 20px 0 0;
+			text-align:center;
+			color:#F3EFE8;
+			transition: all 1s ease-out;
+		}
+		.menu a:hover {
+			background:#D84400;
+			transition: all 1s ease-out;
+		}
+		
+		main .greedblock {
+			display: grid;
+			width:90%;
+			margin:0 auto;
+			grid-template-rows:repeat(3, auto);
+			grid-template-columns:none!important;
+		}
+			main .greedblock div {
+				width:90%;
+				background:#212121;
+				margin:0 auto 16px;
+				transition: all 1s ease-out;
+			}
+					main .ul div p span {
+						display:block;
+						margin:2px 0 15px 40px;
+						white-space: wrap!important;
+						font-size:15px;
+						line-height:15px;
+						color:#F3EFE8;
+					}
+}
+@media (max-width: 440px) {
+	.logo {
+		padding:20px 0px!important;
+		font-family: "Bungee Spice", sans-serif;
+		font-size:50px;
+		line-height:40px;
+		font-weight: 400;
+		font-style: normal;
+		margin:0 auto;
+		width:160px;
+		float:none!important;
+	}
+	.menu {
+		float:none!important;
+		display:block!important;
+		width:90%;
+		margin:0px auto;
+		text-align:center!important;
+	}
+		.menu a {
+			display:inline-block!important;
+			text-decoration:none;
+			background:#212121;
+			padding:12px;
+			width:60px;
+			margin:5px 5px 0 0;
+			text-align:center;
+			color:#F3EFE8;
+			transition: all 1s ease-out;
+		}
+		.menu a:hover {
+			background:#D84400;
+			transition: all 1s ease-out;
+		}
+		
+		main .greedblock {
+			display: grid;
+			width:90%;
+			margin:0 auto;
+			grid-template-rows:repeat(3, auto);
+			grid-template-columns:none!important;
+		}
+			main .greedblock div {
+				width:90%;
+				background:#212121;
+				margin:0 auto 16px;
+				transition: all 1s ease-out;
+			}
+					main .ul div p span {
+						display:block;
+						margin:-2px 5px 15px 38px;
+						white-space: wrap!important;
+						font-size:13px;
+						line-height:13px;
+						color:#F3EFE8;
+					}
+}

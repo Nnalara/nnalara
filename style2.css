@@ -6,7 +6,6 @@ html {
 	background:#040607;
 }
 	body {
-		min-width:360px;
 		background: linear-gradient(to bottom, rgba(4, 27, 36, 1),rgba(4, 6, 7, 1));
 		min-width:660px;
 	}
@@ -63,12 +62,18 @@ html {
 				margin-left:-210px;
 				border:1px solid #040F14;
 			}
+
 			main .ball3 {
 				opacity:0.5;
 				background: linear-gradient(to bottom right, rgba(66, 142, 0, 1), rgba(180, 179, 214, 1), rgba(0, 3, 65, 1));
 				box-shadow:inset 50px 5px 55px rgba(1, 0, 44, 1);
 				transform-style: preserve-3d;
 				border:1px solid #040F14;
+				transition: all 1s ease-out;
+			}
+			main .ball3_red {
+				background: #F80029!important;
+				transition: all 1s ease-out;
 			}
 			@keyframes spinDisk {
 			  from {

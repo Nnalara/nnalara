@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		"You already know… but fear to admit it."
 	];
 
+	document.getElementById('que').focus();
 	
 	document.getElementById('que').addEventListener('click', () => {
 		document.getElementById('arrow').classList.add('yes');
@@ -60,8 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	document.getElementById('arrow').addEventListener('click', () => {
 		document.getElementById('que').classList.add('que_fly');
+		document.getElementById('ball3').classList.add('ball3_red');
 		document.getElementById('arrow').classList.add('none');
-		document.getElementById('next').classList.add('visible');
+		document.getElementById('next').classList.add('visible'); 
 		updateValues();
 	});
 
@@ -88,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.getElementById('que').value = '';
 		document.getElementById("answer").textContent = 'Ask fate a question';
 		document.getElementById('next').classList.remove('visible');
+		document.getElementById('ball3').classList.remove('ball3_red');
 		
 		updateValues();
 	});

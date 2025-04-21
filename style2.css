@@ -1,0 +1,204 @@
+* {
+	margin:0;
+	padding:0;
+}
+html {
+	background:#040607;
+}
+	body {
+		min-width:360px;
+		background: linear-gradient(to bottom, rgba(4, 27, 36, 1),rgba(4, 6, 7, 1));
+		min-width:660px;
+	}
+		main {
+			min-height:1020px;
+			min-width:660px;
+		}
+			main .circleText {
+				font-family: "Puppies Play", cursive;
+				display: block;
+				overflow: visible;
+				width: 100px;
+				font-size: 82px;
+				font-weight:100;
+				fill:#E9E9D9;
+			}
+
+			main .circleText path {
+				fill: none;
+			}
+			
+			main h1 {
+				position:absolute;
+				top:200px;
+				left:50%;
+				margin-left:-350px;
+				transform: rotate(-27deg);
+				cursor:	default;
+			}
+			main .ball {
+				width:420px;
+				height:420px;
+				position:absolute;
+				top: 200px;
+				left: 50%;
+				transform: translate(-50%, 0%);
+				border-radius:50%;
+				transition: transform 0.3s ease-in-out;
+			}
+
+			main .ball1 {
+				opacity:1;
+				background: linear-gradient(to right, rgba(0, 160, 189, 1), rgba(180, 179, 210, 1), rgba(153, 105, 169, 1));
+				transform-style: preserve-3d;
+				animation: spinDisk 6s linear infinite;
+				margin-left:-210px;
+				border:1px solid #040F14;
+			}
+			main .ball2 {
+				opacity:0.4;
+				background: linear-gradient(to bottom left, rgba(158, 69, 128, 1), rgba(180, 179, 210, 1), rgba(0, 50, 17, 1));
+				transform-style: preserve-3d;
+				animation: spinDisk 11s linear infinite;
+				margin-left:-210px;
+				border:1px solid #040F14;
+			}
+			main .ball3 {
+				opacity:0.5;
+				background: linear-gradient(to bottom right, rgba(66, 142, 0, 1), rgba(180, 179, 214, 1), rgba(0, 3, 65, 1));
+				box-shadow:inset 50px 5px 55px rgba(1, 0, 44, 1);
+				transform-style: preserve-3d;
+				border:1px solid #040F14;
+			}
+			@keyframes spinDisk {
+			  from {
+				transform: rotate(0deg);
+			  }
+			  to {
+				transform: rotate(360deg);
+			  }
+			}
+			main .ball4 {
+				box-shadow:inset 0px 0px 160px #000000;
+				border:1px solid #040F14;
+			}
+			main .ball5 {
+				width:20px;
+				height:20px;
+				top:260px;
+				left:52%;
+				background:transparent;
+				box-shadow:40px 40px 30px #ffffff;
+			}
+				main .ball6 {
+					text-align:center;
+				}
+					main .ball6 .question {
+						display:block;
+						margin-top:160px;
+						text-align:center;
+						font-family: "Puppies Play", cursive;
+						font-size: 62px;
+						line-height:80%;
+						font-weight:100;
+						color:#E9E9D9;
+						text-shadow:1px 1px 0px #000000;
+						cursor:	default;
+						position:absolute;
+						width:100%;
+						transition: opacity 1.5s ease-in-out;
+					}
+					main .ball6 .hidden {
+						opacity: 0;
+						transition: opacity 1.5s ease-in-out;
+					}
+
+
+			main .input {
+				width:460px;
+				height:50px;
+				position:absolute;
+				top: 646px;
+				left: 50%;
+				transform: translate(-50%, 0%);
+				transition: transform 0.3s ease-in-out;
+				background: linear-gradient(to right, transparent, rgba(61, 104, 135, 1), transparent);
+			}
+			main .arrow {
+				width:30px;
+				height:30px;
+				position:absolute;
+				top: 625px;
+				left: 50%;
+				margin-left:205px;
+				transform: rotate(-30deg);
+				transition: all 1s ease-out;
+				cursor:pointer;
+				opacity:0;
+				color:#E9E9D9;
+				font-size:80px;
+				animation: swing 2s ease-in-out infinite;
+			}
+			main .yes {
+				opacity:1!important;
+				transition: all 6s ease-out;
+			}
+
+			main .none {
+				opacity:0!important;
+				transition: all 3s ease-out;
+				cursor:	default!important;
+			}
+			main .que {
+				font-family: "Puppies Play", "Great Vibes", cursive;
+				font-weight:100;
+				text-align:center;
+				width:420px;
+				height:0px;
+				font-size:30px;
+				color:#ffffff;
+				padding:250px 0 20px;
+				position:absolute;
+				top: 420px;
+				background:transparent;
+				left: 50%;
+				transform: translate(-50%, 0%);
+				transition: transform 0.3s ease-in-out;
+				border-width:0px;
+				outline:none;
+			}
+			main .que_fly {
+				padding:0px 0 270px!important;
+				font-size:0px!important;
+				transition: 2s!important;
+				cursor:	default!important;
+			}
+			main .que:focus {
+				border-width:0px;
+				outline:none;
+			}
+			main .next {
+				font-family: "Puppies Play", "Great Vibes", cursive;
+				width:210px;
+				height:30px;
+				font-size:30px;
+				position:absolute;
+				top: 710px;
+				left: 50%;
+				margin-left:-62px;
+				cursor:pointer;
+				color:#E9E9D9;
+				opacity:0;
+				transition: opacity 1.5s ease-in-out;
+			}
+
+			main .visible {
+				opacity:1;
+				transition: opacity 8.5s ease-in-out;
+			}
+			
+			@keyframes swing {
+			  0%   { transform: rotate(-5deg); }
+			  50%  { transform: rotate(5deg); }
+			  100% { transform: rotate(-5deg); }
+			}

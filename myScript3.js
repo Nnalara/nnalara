@@ -81,9 +81,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Уменьшаем параметры со временем
     setInterval(() => {
-        stats.hunger -= 0.6;      // Голод убывает быстрее
-        stats.boredom -= 0.4;     // Скука — средне
-        stats.cleanliness -= 0.2; // Чистота медленно
+        stats.hunger -= 1.2;      // Голод убывает быстрее
+        stats.boredom -= 0.9;     // Скука — средне
+        stats.cleanliness -= 0.6; // Чистота медленно
 
         updateBars();
         updateEyeColorByHunger(); // вот оно!

@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updatePupil(purityScale) {
         const pupil = document.querySelector('#pupil');
-        const scale = Math.max(3, 22.5 * purityScale); // чем ниже purityScale, тем меньше зрачок
+        const scale = Math.max(3, 32.5 * purityScale); // чем ниже purityScale, тем меньше зрачок
         pupil.setAttribute('rx', scale);
         pupil.setAttribute('ry', scale);
     }

@@ -19,13 +19,16 @@ html {
 		}
 		main .block {
 			width:280px;
-			margin:150px auto;
+			margin:150px auto 0;
 			position:relative;
 		}
 		main .block svg {
 			width: 250px;
 			height: auto;
 			margin:0 auto;
+		}
+		.nnbar {
+			margin:200px auto 0!important;
 		}
 
 		main .block ellipse, main .block circle {
